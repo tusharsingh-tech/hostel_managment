@@ -1,1 +1,11 @@
-# hostel_managment
+# hostel_managment<!DOCTYPE html>
+<html>
+<head>
+<title>Hostel</title>
+</head>
+<body>
+<h1>🏠 Hostel Management System</h1>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</body>
+</html>
