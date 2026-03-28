@@ -1,1 +1,16 @@
 backend/login.php
+<?php
+$conn = mysqli_connect("localhost","root","","hostel");
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$result = mysqli_query($conn,
+"SELECT * FROM users WHERE email='$email' AND password='$password'");
+
+if(mysqli_num_rows($result)>0){
+    header("Location: ../dashboard.php");
+}else{
+    echo "Login Failed";
+}
+?>
